@@ -1,0 +1,16 @@
+[규칙 3가지]
+
+부모엘리먼트로 만들려면 flex container로 만들어야 한다. => 방법 display : flex 해주면 된다.
+
+
+1. 자식 엘리먼트에는 어떤 것도 적지 말아야 한다. 부모 엘리먼트에만 명시해야한다.
+ 예) div 3개를 움직이고 싶다면 해당 div가 아닌 div 3개의 부모(여기에선 body)
+    에게만 flexbox를 명시해야함.
+
+	<body>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	</body>
+
+

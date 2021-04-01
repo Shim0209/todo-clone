@@ -1,0 +1,63 @@
+HTML 태그
+
+1. a (anchor)
+ - attribute 
+	href
+	 - 하이퍼링크 주소 설정
+	target 
+	 - _slef (해당창에서 열림)
+	 - _blank (새로운창이 열림)
+ - 구조
+	<a href=""><a/>
+
+2. img
+ - attribute
+	src
+	 - 이미지 주소 설정
+	alt
+	 - 이미지가 정상작동되지 않을때 대체할 텍스트를 설정
+ - 구조
+	<img /> 
+	self closing tag 
+
+3. meta
+ - 화면에 표현되지 않은 부가적인 정보를 작성
+ - attribute
+	name
+	content
+ 	charset
+	property
+ - 구조
+	<mata name="" content="">
+
+4. html
+ - attribute
+	lang
+	 - 해당 웹사이트에서 자동사용하는 언어를 설정 
+	 - 검색엔진에 주로 사용되는 언어를 알려주기위함
+
+5. link
+ - attribute
+	rel 
+	 - 링크가 현재 페이지와 어떤 관계를 갖는지를 설명하는 속성
+	sizes
+	href
+
+6. input
+ - attribute
+	required
+	 - 해당 input란을 꼭 작성해야 다음으로 진행이되도록 설정
+	placeholder
+	 - input란에 미리 텍스트를 설정
+	type
+	 - text, password, submit, file, url, email, range, date 등등 다양하게 있음
+	value
+	accpet
+	 - .pdf 설정시 오직 pdf파일만 선택할 수 있음
+	minlength
+	 - 최소 길이 설정
+
+	label과 input
+	 <label for="profile">Profile Photo</label>
+	 <input id="profile">
+	 label의 for, input의 id가 같은경우 해당 label 텍스트 클릭시 해당 input을 작동시킴

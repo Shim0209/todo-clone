@@ -1,0 +1,4 @@
+Math.floor()
+	무조건 자리 내림
+Math.celing()
+	무조건 자리 올림

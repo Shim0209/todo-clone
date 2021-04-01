@@ -1,0 +1,2 @@
+parseInt()
+	string을 숫자로 바꾸는 함수

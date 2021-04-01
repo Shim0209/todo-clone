@@ -1,0 +1,6 @@
+1. 자바스크립트 객체 -> string 바꾸는법
+	
+	JSON.stringify(객체);
+
+2. string -> 자바스크립트 객체 바꾸는법
+	
