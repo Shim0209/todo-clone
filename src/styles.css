@@ -100,7 +100,20 @@ ul, li {
 .js-toDoList li,
 .js-finishList li {
     display: flex;
+    
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
 }
+
+.js-toDoList li {
+    background-color: cornflowerblue;
+}
+
+.js-finishList li {
+    background-color: lightcoral;
+}
+
 .js-toDoList li span,
 .js-finishList li span {
     text-align: center;
