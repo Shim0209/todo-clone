@@ -44,7 +44,7 @@ function paintComp(text) {
     const delBtn = document.createElement("button");
     const returnBtn = document.createElement("button");
     const span = document.createElement("span");
-    const newId = comps.length + 1;
+    const newId = createNum("comp");
 
     delBtn.innerText = "❌";
     delBtn.addEventListener("click", deleteComp);
@@ -71,7 +71,7 @@ function paintToDo(text) {
     const delBtn = document.createElement("button");
     const compBtn = document.createElement("button");
     const span = document.createElement("span");
-    const newId = toDos.length + 1;
+    const newId = createNum("todo");
 
     delBtn.innerText = "❌";
     delBtn.addEventListener("click", deleteToDo);
@@ -114,6 +114,32 @@ function handleSubmit(event) {
     const currentValue = toDoInput.value;
     paintToDo(currentValue);
     toDoInput.value = "";
+}
+
+function createNum(text) {
+    const randomNum = Math.floor(Math.random() * 100000) + 10000;
+    const check = checkDupNum(text, randomNum);
+    if (check === 0) {
+      createNum(text);
+    }
+    return randomNum;
+}
+
+function checkDupNum(text, num) {
+if (text === "todo") {
+    for (let todoObj in toDos) {
+    if (num === todoObj.id) {
+        return 0;
+    }
+    }
+} else if (text === "comp") {
+    for (let compObj in comps) {
+    if (num === compObj.id) {
+        return 0;
+    }
+    }
+}
+return 1;
 }
 
 function loadToDos() {

@@ -85,8 +85,13 @@ ul, li {
     outline-style: none;
     border-style: none;
     margin-bottom: 25px;
-    
 }
+.todo-list,
+.finish-list {
+    color: black;
+    box-shadow: 0 0 10px 1px white;
+}
+
 .todo-list h1,
 .finish-list h1 {
     text-align: center;
