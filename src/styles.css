@@ -89,7 +89,7 @@ ul, li {
 .todo-list,
 .finish-list {
     color: black;
-    box-shadow: 0 0 10px 1px white;
+    box-shadow: 0 0 10px 1px tomato;
 }
 
 .todo-list h1,
